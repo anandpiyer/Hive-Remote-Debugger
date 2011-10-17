@@ -69,7 +69,7 @@ execHiveCmdWithRemoteDebugger () {
   echo exec $JAVA_HOME/bin/java $DEBUG_INFO org.apache.hadoop.util.RunJar ${HIVE_LIB}/hive-cli-*.jar $CLASS $HIVE_OPTS "$@"
   echo "--------------------------------------------------------------"
   echo " If this fails, make sure you have the correct JAVA_HOME,
-  echo " HADOOP_HOME and HIVE_HOME variables.
+  echo " HADOOP_HOME and HIVE_HOME variables."
   echo "--------------------------------------------------------------"
   #exec $HADOOP ${HIVE_LIB}/hive-cli-*.jar $CLASS $HIVE_OPTS "$@"
   exec $JAVA_HOME/bin/java $DEBUG_INFO org.apache.hadoop.util.RunJar ${HIVE_LIB}/hive-cli-*.jar $CLASS $HIVE_OPTS "$@"
