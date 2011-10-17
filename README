@@ -1,0 +1,9 @@
+This is to enable remote debugging of hive through Eclipse. It turns out that hive does not allow debugging through Eclipse even after you add it as a project (throws error about metastore). 
+
+To start remote debugging, just start hive with service parameter 'cliWithRemoteDebugger'. ie.
+
+> $HIVE_HOME/bin/hive --service cliWithRemoteDebugger
+
+Now you can connect to hive through Eclipse on port 8001.
+
+This works satisfactorily with cloudera distributions of hadoop (hadoop-0.20.2-cdh3u1) and hive (hive-0.7.1-cdh3u1).
